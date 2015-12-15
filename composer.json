@@ -1,0 +1,45 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/definition-discovery.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/doctrine-cache-harmony.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/yaco-discovery.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/container-discovery.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/composite-container-factory.git"
+        }
+
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src/"
+        }
+    },
+    "require": {
+        "thecodingmachine/doctrine-cache-harmony" : "~1.0",
+        "thecodingmachine/yaco-factory": "dev-master",
+        "thecodingmachine/composite-container-factory": "~1.0",
+
+        "container-interop/definition-interop": "dev-master as 0.2.0",
+
+        "puli/composer-plugin": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "puli/cli": "~1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
